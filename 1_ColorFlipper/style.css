@@ -38,7 +38,7 @@ ul {
 /* Navigation Details */
 
 #logo {
-    background: linear-gradient(to right,rgb(177, 58, 58), rgb(64, 146, 200));
+    background: linear-gradient(to right,#c29e9e, rgb(64, 146, 200));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 25px;
@@ -65,6 +65,7 @@ h1 {
     font-weight: 700;
     letter-spacing: 1px;
     color: #fff;
+    transition: all 0.3s linear;
 }
 
 button {
@@ -95,4 +96,10 @@ button:hover {
     cursor: pointer;
     transition: 0.4s ease-in;
     transform: scale(1.05);
+}
+
+h1:hover{
+    background-color: #fff;
+    color: #000;
+    transition: 0.4s ease-in-out;
 }
