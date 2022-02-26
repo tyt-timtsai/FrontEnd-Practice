@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
+
+:root {
+    --primary :  #1DA1F2;
+    --background : #f6fafd;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--background);
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 3px;
+}
+
+header {
+    /* margin: 100px; */
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 40px;
+    color: #333;
+}
+
+hr {
+    width: 80px;
+    border: 2px solid var(--primary);
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    margin-top: 50px;
+    padding: 5px 60px;
+    width: 500px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.img-container {
+    margin: 0 auto;
+    margin-bottom: 1.5rem;
+}
+
+img {
+    display: inline;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 7px -3px var(--primary);
+}
+
+.img-container::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 1.2rem;
+    content: "\f10e";
+    position: absolute;
+    top: 220px;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    background: var(--primary);
+    color: var(--background);
+}
+
+h4 {
+    margin: 0 0 4px;
+}
+
+#job {
+    margin: 0 0 8px;
+    color: var(--primary);
+    font-size: 13px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+#info {
+    margin: 0 0 12px;
+    color: rgb(90, 90, 90);
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.button-container {
+    margin-bottom: 8px;
+}
+
+#prev,#next {
+    font-size: 1.3rem;
+    background: transparent;
+    border-color: transparent;
+    color: #8fcdf3;
+    transition: all 0.3s linear;
+}
+
+#prev:hover, #next:hover {
+    color: var(--primary);
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+#prev:active, #next:active {
+    transform: scale(0.9);
+    transition: all 0.1s ease-in;
+}
+
+#random-btn {
+    padding: 3px 8px;
+    background-color: var(--background);
+    border-color: var(--primary);
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    color: var(--primary);
+    border-radius: 10px;
+    transition: all 0.2s linear;
+}
+
+#random-btn:hover {
+    background-color: var(--primary);
+    color:#000;
+}
