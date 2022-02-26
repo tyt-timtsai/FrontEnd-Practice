@@ -15,10 +15,9 @@
 ### 使用到的語法 : 
 **Javascript :**
   * if else statement
-  * querySelector & querySelectorAll
-  * forEach
-   >> 嘗試以更簡潔的寫法選取buttons
-  * Array.className
+  * querySelector & querySelectorAll (學習直接引入成陣列，之後就能使用Map,forEach,filiter等高階語法)
+  * forEach (嘗試以更簡潔的寫法選取buttons)
+  * Array.className (了解透過event的value可以做到篩選甚至更多事)
   * const v.s let
   * Element.style.color & Element.innerHTML
   * addEventListener
