@@ -21,7 +21,7 @@
   * Element.style.color & Element.innerHTML
   * addEventListener
 
-```
+```js
 btns.forEach(function(btns) {
     const btn = btns.className;
 
