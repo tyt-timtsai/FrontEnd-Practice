@@ -3,9 +3,9 @@
 ---
 
 <img src="https://github.com/TYTforCoding/FrontEnd-Practice/blob/main/2_Counter/demo/1.png" alt="Project" height=400px>
-<img src="https://github.com/TYTforCoding/FrontEnd-Practice/blob/main/2_Counter/demo/2.png" alt="Increase 1" height=400px 
-     -src="https://github.com/TYTforCoding/FrontEnd-Practice/blob/main/2_Counter/demo/5.png" alt="Reset" height=400px 
-     -src="https://github.com/TYTforCoding/FrontEnd-Practice/blob/main/2_Counter/demo/4.png" alt="Decrease -1" height=400px>
+<img src="https://github.com/TYTforCoding/FrontEnd-Practice/blob/main/2_Counter/demo/2.png" alt="Increase 1" height=400px>
+<img src="https://github.com/TYTforCoding/FrontEnd-Practice/blob/main/2_Counter/demo/5.png" alt="Reset" height=400px>
+<img src="https://github.com/TYTforCoding/FrontEnd-Practice/blob/main/2_Counter/demo/4.png" alt="Decrease -1" height=400px>
 
 ### 使用到的語法 : 
 **Javascript :**
