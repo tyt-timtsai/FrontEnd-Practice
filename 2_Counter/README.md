@@ -2,14 +2,9 @@
 **嘗試做一個計數器，練習2條件以上的判斷，以及跟著數值的正負轉換顏色。**
 ---
 
-![image](https://github.com/TYTforCoding/FrontEnd-Practice/blob/main/2_Counter/demo/1.png "Project")
-![image](https://github.com/TYTforCoding/FrontEnd-Practice/blob/main/2_Counter/demo/2.png "Increase 1")
-![image](https://github.com/TYTforCoding/FrontEnd-Practice/blob/main/2_Counter/demo/5.png "Reset")
-![image](https://github.com/TYTforCoding/FrontEnd-Practice/blob/main/2_Counter/demo/4.png "Decrease -1")
-
 <img src="https://github.com/TYTforCoding/FrontEnd-Practice/blob/main/2_Counter/demo/1.png" alt="Project" height=400px>
-<img src="https://github.com/TYTforCoding/FrontEnd-Practice/blob/main/2_Counter/demo/2.png" alt="Increase 1" height=400px |
-     -src="https://github.com/TYTforCoding/FrontEnd-Practice/blob/main/2_Counter/demo/5.png" alt="Reset" height=400px |
+<img src="https://github.com/TYTforCoding/FrontEnd-Practice/blob/main/2_Counter/demo/2.png" alt="Increase 1" height=400px 
+     -src="https://github.com/TYTforCoding/FrontEnd-Practice/blob/main/2_Counter/demo/5.png" alt="Reset" height=400px 
      -src="https://github.com/TYTforCoding/FrontEnd-Practice/blob/main/2_Counter/demo/4.png" alt="Decrease -1" height=400px>
 
 ### 使用到的語法 : 
