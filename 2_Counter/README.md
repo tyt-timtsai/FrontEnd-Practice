@@ -3,7 +3,7 @@
 ---
 ## Project :
 <p align = "center">
- <img src="https://github.com/TYTforCoding/FrontEnd-Practice/blob/main/2_Counter/demo/1.png" alt="Project" height=400px>
+ <img src="https://github.com/TYTforCoding/FrontEnd-Practice/blob/main/2_Counter/demo/1.png" alt="Project" height=1200px>
 </p>
 
 <p display = flex align = "center">
