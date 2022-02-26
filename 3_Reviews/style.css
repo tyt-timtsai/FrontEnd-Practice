@@ -39,7 +39,7 @@ main {
 
 .container {
     margin-top: 50px;
-    padding: 5px 60px;
+    padding: 5px 60px 40px;
     width: 500px;
     height: 400px;
     display: flex;
@@ -81,6 +81,7 @@ img {
 
 h4 {
     margin: 0 0 4px;
+    text-transform: capitalize;
 }
 
 #job {
@@ -89,6 +90,7 @@ h4 {
     font-size: 13px;
     font-weight: 300;
     letter-spacing: 1px;
+    text-transform: uppercase;
 }
 
 #info {
@@ -102,6 +104,8 @@ h4 {
 
 .button-container {
     margin-bottom: 8px;
+    position: fixed;
+    top: 530px;
 }
 
 #prev,#next {
@@ -133,6 +137,8 @@ h4 {
     color: var(--primary);
     border-radius: 10px;
     transition: all 0.2s linear;
+    position: fixed;
+    top: 570px;
 }
 
 #random-btn:hover {
