@@ -7,10 +7,19 @@ let count = 0
 
 // console.log(btns) 選取到一個陣列內涵3個button
 btns.forEach(function(btns) {
-    console.log(btns.className); // 可以選出每個button的名字
-    const btn = btns.className; //將選出的名字儲存在區域變數
+    const btn = btns.className;
 
     btns.addEventListener('click',function(){
-        console.log(btn) //點擊時可以篩選出單獨的button
+        if(btn === 'plus'){
+            count ++;
+        }
+        else if(btn === 'minus'){
+            count --;
+        }
+        else {
+            count = 0;
+        }
+        counts.innerHTML = count;
     })
+
 });
