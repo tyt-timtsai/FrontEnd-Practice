@@ -7,9 +7,9 @@
 </p>
 
 <p display = flex align = "center">
- <img src="https://github.com/TYTforCoding/FrontEnd-Practice/blob/main/2_Counter/demo/2.png" alt="Increase 1" height=400px>
- <img src="https://github.com/TYTforCoding/FrontEnd-Practice/blob/main/2_Counter/demo/5.png" alt="Reset" height=400px>
  <img src="https://github.com/TYTforCoding/FrontEnd-Practice/blob/main/2_Counter/demo/4.png" alt="Decrease -1" height=400px>
+ <img src="https://github.com/TYTforCoding/FrontEnd-Practice/blob/main/2_Counter/demo/5.png" alt="Reset" height=400px>
+ <img src="https://github.com/TYTforCoding/FrontEnd-Practice/blob/main/2_Counter/demo/2.png" alt="Increase 1" height=400px>
 </p>
  
 ### 使用到的語法 : 
@@ -17,6 +17,7 @@
   * if else statement
   * querySelector & querySelectorAll
   * forEach
+   >> 嘗試以更簡潔的寫法選取buttons
   * Array.className
   * const v.s let
   * Element.style.color & Element.innerHTML
