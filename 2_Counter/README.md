@@ -1,7 +1,7 @@
 # Counter 計數器
 **嘗試做一個計數器，練習2條件以上的判斷，以及跟著數值的正負轉換顏色。**
 ---
-<p display = grid ,grid-column = 2>
+<p display = grid ,grid-template-column = 1fr1fr1fr>
  <img src="https://github.com/TYTforCoding/FrontEnd-Practice/blob/main/2_Counter/demo/1.png" alt="Project" height=400px>
  <img src="https://github.com/TYTforCoding/FrontEnd-Practice/blob/main/2_Counter/demo/2.png" alt="Increase 1" height=400px>
  <img src="https://github.com/TYTforCoding/FrontEnd-Practice/blob/main/2_Counter/demo/5.png" alt="Reset" height=400px>
