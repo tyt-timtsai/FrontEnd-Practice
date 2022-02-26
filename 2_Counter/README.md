@@ -2,7 +2,7 @@
 **嘗試做一個計數器，練習2條件以上的判斷，以及跟著數值的正負轉換顏色。**
 ---
 <p align = "center">
- <h2>Counter :</h2>
+ Counter :
  <img src="https://github.com/TYTforCoding/FrontEnd-Practice/blob/main/2_Counter/demo/1.png" alt="Project" height=400px>
 </p>
 
