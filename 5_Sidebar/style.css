@@ -9,6 +9,7 @@
     --clr-backgroundColor: #ECEAEA;
     --clr-white: #fff;
     --transition: all 0.3s linear;
+    --transition2: all 0.5s linear;
 }
 
 body {
@@ -63,7 +64,12 @@ aside {
     justify-content: space-between;
     align-items: center;
     background-color: var(--clr-white);
-    /* transform: translateX(-100%); */
+    transform: translateX(-100%);
+    transition: var(--transition2);
+}
+
+.active {
+    transform: translateX(0);
 }
 
 .aside-menu {
