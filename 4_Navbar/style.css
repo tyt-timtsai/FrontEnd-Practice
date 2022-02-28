@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;500&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+main {
+    position: absolute;
+    height: min(100vh);
+    width: min(100vw);
+    background-color: #f6fafd;
+    letter-spacing: 2px;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    background-color: #fff;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+
+.nav-header {
+    width: 100vw;
+    padding: 0.5rem 1.5rem;
+    margin: 0;
+    box-sizing: border-box;
+    /* height: auto; */
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.logo {
+    display: inline-flex;
+    font-size: 30px;
+    font-weight: 500;
+    text-shadow: 0px 4px 6px rgb(204, 204, 204);
+}
+
+#logo-color {
+    color: #1DA1F2;
+    margin-left: 8px;
+}
+
+button {
+    background-color: transparent;
+    color: #1DA1F2;
+    border: transparent;
+    font-size: 26px;
+    transition: all 0.2s linear;
+}
+
+button:hover {
+    color: #0a3753;
+    transform: rotate(90deg);
+    cursor: pointer;
+}
+
+/* Menu */
+
+.nav-menu {
+    /* height: 14rem; */
+    height: 0;
+    overflow: hidden;
+    transition: all 0.4s linear;
+}
+
+.showMenu {
+    height: 14rem;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    list-style: none;
+    /* display: flex;
+    justify-content: space-around; */
+}
+
+li {
+    padding: 0;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+a {
+    padding: 10px 20px;
+    display: block;
+    text-decoration: none;
+    color: rgb(5, 49, 66);
+    transition: all 0.2s linear;
+}
+
+.social-media {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    font-size: 18px;
+}
+
+.social-media > a {
+    color: #1DA1F2;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+li a:hover {
+    color: #1DA1F2;
+    background-color: #c8ebff;
+    padding-left: 30px;
+}
+
+.social-media a:hover {
+    opacity: 0.5;
+    transform: translateY(-5px);
+}
+
+/* 電腦與筆電顯示 */
+
+@media (min-width:800px){
+    nav{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav-header {
+        width: min-content;
+    }
+
+    .nav-link {
+        display: flex;
+        align-items: center;
+    }
+
+    .nav-menu {
+        height: 5rem;
+        display: flex;
+    }
+
+    button {
+        display: none;
+    }
+
+    ul {
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 1rem;
+        place-items: center ;
+        width: auto;
+    }
+
+    a {
+        padding: 0;
+        display: flex;
+    }
+
+    li a:hover {
+    color: #1DA1F2;
+    background-color:transparent;
+    padding-left: 0;
+    padding-bottom: 10px;
+    }
+
+    .social-media {
+        margin: 0 2em;
+        display: flex;
+        align-items: center;
+    }
+}
