@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+:root {
+    --clr-primary: #327AAE;
+    --clr-primary2: #1A4460;
+    --clr-primary3: #DB5461;
+    --clr-primary4: #CFC9C9;
+    --clr-backgroundColor: #ECEAEA;
+    --clr-white: #fff;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppin' sans-serif;
+    background-color: var(--clr-backgroundColor);
+}
+
+#btn-menu {
+    position: absolute;
+    top: 1.5rem;
+    right: 3rem;
+    font-size: 2rem;
+    color: var(--clr-primary);
+    background-color: transparent;
+    border: transparent;
+}
+
+/* Aside */
+
+aside {
+    position: fixed;
+    height: 100%;
+    width: 24rem;
+    padding: 1.5rem 1.5rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--clr-white);
+}
+
+/* Sidebar Header */
+.aside-header {
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.logo {
+    margin: 0;
+    font-size: 2rem;
+    text-shadow: 1px 3px 4px var(--clr-primary4);
+}
+
+#logo-color {
+    color: var(--clr-primary);
+}
+
+#btn-close {
+    color: var(--clr-primary3);
+    background-color: transparent;
+    border: transparent;
+    font-size: 2.5rem;
+}
+
+/* Sidebar Links */
+
+ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+li {
+    padding: 20px;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+a {
+    color: var(--clr-primary4);
+    text-decoration: none;
+}
+
+/* Social Media */
+
+.social-media {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(5,1.5rem);
+    gap: 0.5em;
+    font-size: 1.3rem;
+    padding-bottom: 20px;
+}
