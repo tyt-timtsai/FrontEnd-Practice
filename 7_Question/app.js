@@ -2,9 +2,17 @@
 
 const Btn = document.getElementById('toggle')
 const Answer = document.querySelector('.answer')
+const icon = document.querySelector('i')
+
+//直接透過更新className的方式變換按鈕icon，希望可以減少記憶體消耗
 
 Btn.addEventListener('click', () => {
     Answer.classList.toggle('active')
-})
 
-// 之後要加入按鈕的變換
+    if(icon.className === "far fa-plus-square"){
+        icon.className = "far fa-minus-square"
+        console.log(icon.className);
+    } else {
+        icon.className = "far fa-plus-square"
+    }
+})
