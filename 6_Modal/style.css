@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+:root {
+    --clr-primary: #327AAE;
+    --clr-primary2: #1A4460;
+    --clr-primary3: #DB5461;
+    --clr-primary4: #CFC9C9;
+    --clr-primary5: #b6d5e4;
+    --clr-backgroundColor: #ECEAEA;
+    --clr-white: #fff;
+    --transition: all 0.3s linear;
+    --transition2: all 0.5s linear;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppin', sans-serif;
+    letter-spacing: 3px;
+    /* background-color: var(--clr-backgroundColor); */
+}
+
+.hero {
+    min-height: 100vh;
+    background-image: url("https://picsum.photos/id/12/1200/1200");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    place-items: center;
+}
+
+/* Content */
+
+.box {
+    /* height: 12rem; */
+    width: 40rem;
+    padding: 30px 0;
+    border-radius: 10px;
+    background-color: var(--clr-backgroundColor);
+    display: grid;
+    place-items: center;
+    grid-auto-rows: 1fr;
+}
+
+h1 {
+    margin: 0;
+    padding-top: 2rem;
+    font-size: 4rem;
+    color: var(--clr-primary2);
+}
+
+#btn-open {
+    font-family: 'Poppin', sans-serif;
+    background-color: var(--clr-primary);
+    border-radius: 10px;
+    border: 2px solid var(--clr-primary);
+    color: var(--clr-backgroundColor);
+    letter-spacing: 2px;
+    font-size: 1.1rem;
+    transition: var(--transition);
+}
+
+#btn-open:hover {
+    background: var(--clr-backgroundColor);
+    color: var(--clr-primary);
+    transform: scale(1.05);
+}
+
+button {
+    cursor: pointer;
+}
+/* Modal */
+
+.modal {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    z-index: -10;
+    background: rgba(50, 122, 174, 0.5);
+    display: grid;
+    place-items: center;
+}
+
+p {
+    margin: 5rem 0;
+    font-size: 2rem;
+}
+
+#btn-close {
+    position: absolute;
+    top: 32%;
+    right: 20%;
+    color: var(--clr-primary3);
+    background-color: transparent;
+    border: transparent;
+    font-size: 2rem;
+    transition: var(--transition);
+}
+
+#btn-close:hover {
+    transform: scale(1.2);
+    opacity: 0.8;
+}
