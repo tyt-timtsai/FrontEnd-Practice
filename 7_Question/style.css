@@ -65,7 +65,7 @@ article {
     color: var(--clr-primary2);
 }
 
-#toggle {
+.toggle {
     position: relative;
     top: 0px;
     right: 0px;
@@ -99,7 +99,7 @@ p {
 
 /* Interactive */
 
-#toggle:hover {
+.toggle:hover {
     transform: rotate(90deg) scale(1.1);
     cursor: pointer;
 }
