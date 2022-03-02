@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+:root {
+    --clr-primary: #327AAE;
+    --clr-primary2: #1A4460;
+    --clr-primary3: #DB5461;
+    --clr-primary4: #CFC9C9;
+    --clr-primary5: #b6d5e4;
+    --clr-backgroundColor: #f4fcfc;
+    --clr-white: #fff;
+    --transition: all 0.3s linear;
+    --transition2: all 0.5s linear;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppin', sans-serif;
+    letter-spacing: 3px;
+    background-color: var(--clr-backgroundColor);
+}
+
+main {
+    margin-top: 4rem;
+    min-height: 100vh;
+    /* width: 65vw; */
+    display: grid;
+    place-items: center;
+    gap: 2rem;
+}
+
+/* Header */
+
+.title {
+    font-size: 3rem;
+    font-weight: 500;
+    color: var(--clr-primary2);
+    text-align: center;
+}
+
+hr {
+    margin: 0 auto;
+    height: 4px;
+    width: 6rem;
+    background-color: var(--clr-primary4);
+    border: transparent;
+}
+
+button {
+    margin: 1rem 0.5rem;
+    background-color: transparent;
+    border: 2px solid var(--clr-primary);
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-family: 'Poppin', sans-serif;
+    color: var(--clr-primary);
+    transition: var(--transition);
+}
+
+/* Header Interactive */
+
+button:hover, button:focus {
+    background-color: var(--clr-primary);
+    color:var(--clr-backgroundColor);
+    cursor: pointer;
+}
+
+.focus {
+    background-color: var(--clr-primary);
+    color:var(--clr-backgroundColor);
+}
+
+/* Card Section */
+
+section {
+    width: 70vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+/* Card */
+
+.card {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+}
+
+.img-container {
+    height: 150px;
+    width: 250px;
+    border: 5px solid var(--clr-primary3);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+img {
+    max-width: 100%;
+}
+
+.info-header {
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px dotted var(--clr-primary2) ;
+}
+
+.dishes{
+    font-weight: 500;
+    color: var(--clr-primary2);
+}
+
+.price {
+    font-weight: 500;
+    color: var(--clr-primary4);
+}
+
+.disc {
+    font-weight: 300;
+    letter-spacing: 1px;
+    /* font-size: 0.9rem; */
+    color: var(--clr-primary2);
+}
+
+@media screen and (max-width:768px) {
+    .img-container {
+        height: 200px;
+        width: 400px;
+    }
+
+    .card {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        place-items: center;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    section {
+        grid-template-columns: 1fr 1fr;
+    }
+}
