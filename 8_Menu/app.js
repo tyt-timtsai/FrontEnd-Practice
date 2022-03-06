@@ -84,12 +84,15 @@ const cards = [
 ]
 
 const section = document.querySelector('section')
-const btns = document.querySelectorAll('button')
+const filter = document.querySelector('.filter')
+// const btns = document.querySelectorAll('button') 
+
 
 // 等ＤＯＭ讀取好再執行
 
 window.addEventListener('DOMContentLoaded', function(){
     displayMenuCard(cards)
+    displayFilterBtn(categoryBtns)
 })
 
 // 透過ＪＳ外部連結 HTML
@@ -113,7 +116,32 @@ function displayMenuCard(card){
     section.innerHTML= displayMenu;
 }
 
-// 設置button的篩選機制
+// 動態創造按鈕
+
+    // const categories = cards.map(function(item){
+    //     return item.category;
+    // })
+
+//reduce常見的預設值可能是0，但他其實更強大，像這個case中我可以預設['All']，這樣他就會產生All這個不在category中的button了。
+const categories = cards.reduce(function(value, item){
+    if(!value.includes(item.category)){  //如果這個種類不在新陣列中才新增
+        value.push(item.category);
+    }
+    return value
+},['All']) 
+console.log(categories);
+
+const categoryBtns = categories.map(function(category){
+    return `<button data-id=${category}>${category}</button>`
+}).join(''); //因為用const不能改變值，但可以在最後用.join來達到同樣的效果
+
+console.log(categoryBtns);
+
+function displayFilterBtn(categories){
+    filter.innerHTML = categories;
+    const btns = filter.querySelectorAll('button')
+
+    // 設置button的篩選機制
 
 btns.forEach(function(btn){
     btn.addEventListener('click', function(e){
@@ -131,3 +159,4 @@ btns.forEach(function(btn){
         }
     })
 })
+}
